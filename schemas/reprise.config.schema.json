@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://reprise.dev/schemas/reprise.config.schema.json",
+  "title": "Reprise configuration",
+  "type": "object",
+  "required": ["project", "provider"],
+  "additionalProperties": false,
+  "properties": {
+    "project": { "type": "object", "required": ["name"], "properties": { "name": { "type": "string", "minLength": 1 }, "root": { "type": "string" }, "environment": { "type": "string" } } },
+    "provider": { "type": "object", "required": ["name"], "properties": { "name": { "type": "string", "minLength": 1 }, "options": { "type": "object", "additionalProperties": true } } },
+    "recovery": { "type": "object" },
+    "verification": { "type": "object" },
+    "policy": { "type": "object" },
+    "guards": { "type": "object" },
+    "telemetry": { "type": "object" }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "reprise",
+  "version": "1.1.0-rc.1",
+  "private": true,
+  "type": "module",
+  "description": "Reprise — backend recovery and compatibility control plane",
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=20"
+  },
+  "packageManager": "pnpm@11.19.0",
+  "scripts": {
+    "build": "pnpm -r run build",
+    "test": "pnpm -r run test",
+    "lint": "pnpm -r --sort run build && pnpm -r run lint",
+    "typecheck": "pnpm -r --sort run build && pnpm -r run typecheck",
+    "clean": "pnpm -r exec rimraf dist coverage",
+    "sbom:inventory": "node scripts/generate-sbom.mjs",
+    "sbom:cyclonedx": "pnpm sbom --sbom-format cyclonedx --out acquisition/SBOM.cyclonedx.json",
+    "release:validate": "pnpm lint && pnpm typecheck && pnpm test && pnpm build && node apps/cli/dist/index.js demo acquisition --json && node scripts/generate-sbom.mjs && pnpm sbom --sbom-format cyclonedx --out acquisition/SBOM.cyclonedx.json"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8",
+    "rimraf": "^6.0.1"
+  }
+}

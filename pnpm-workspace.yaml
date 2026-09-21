@@ -1,0 +1,8 @@
+packages:
+  - "apps/*"
+  - "packages/*"
+  - "providers/*"
+  - "integrations/*"
+allowBuilds:
+  # Vitest uses esbuild to transform TypeScript tests. This is the only approved dependency build.
+  esbuild: true

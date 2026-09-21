@@ -1,0 +1,21 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "rootDir": "src",
+    "composite": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["src/**/*.test.ts", "dist"],
+  "references": [
+    { "path": "../core" },
+    { "path": "../graph" },
+    { "path": "../ledger" },
+    { "path": "../compatibility" },
+    { "path": "../planner" },
+    { "path": "../verifier" },
+    { "path": "../policy" },
+    { "path": "../telemetry" },
+    { "path": "../providers" }
+  ]
+}

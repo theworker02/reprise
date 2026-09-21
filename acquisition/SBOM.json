@@ -1,0 +1,201 @@
+{
+  "bomFormat": "Reprise-inventory",
+  "specVersion": "0.1",
+  "generatedAt": "2026-09-21T16:38:16.036Z",
+  "source": "package manifests; not a substitute for a release CycloneDX/SPDX scan",
+  "packages": [
+    {
+      "name": "reprise",
+      "version": "1.1.0-rc.1",
+      "license": "UNLICENSED",
+      "path": "package.json",
+      "dependencies": [
+        "@types/node",
+        "rimraf",
+        "typescript",
+        "vitest"
+      ]
+    },
+    {
+      "name": "@reprise/cli",
+      "version": "1.1.0-rc.1",
+      "license": "UNLICENSED",
+      "path": "apps/cli/package.json",
+      "dependencies": [
+        "@reprise/core",
+        "@reprise/ledger",
+        "@reprise/policy",
+        "@reprise/recovery",
+        "@reprise/verifier",
+        "@types/node",
+        "typescript",
+        "vitest"
+      ]
+    },
+    {
+      "name": "@reprise/core",
+      "version": "1.1.0-rc.1",
+      "license": "UNLICENSED",
+      "path": "packages/core/package.json",
+      "dependencies": [
+        "@types/node",
+        "typescript",
+        "vitest",
+        "yaml",
+        "zod"
+      ]
+    },
+    {
+      "name": "@reprise/graph",
+      "version": "1.1.0-rc.1",
+      "license": "UNLICENSED",
+      "path": "packages/graph/package.json",
+      "dependencies": [
+        "@reprise/core",
+        "@types/node",
+        "typescript",
+        "vitest"
+      ]
+    },
+    {
+      "name": "@reprise/ledger",
+      "version": "1.1.0-rc.1",
+      "license": "UNLICENSED",
+      "path": "packages/ledger/package.json",
+      "dependencies": [
+        "@reprise/core",
+        "@types/node",
+        "typescript",
+        "vitest"
+      ]
+    },
+    {
+      "name": "@reprise/policy",
+      "version": "1.1.0-rc.1",
+      "license": "UNLICENSED",
+      "path": "packages/policy/package.json",
+      "dependencies": [
+        "@reprise/core",
+        "@types/node",
+        "typescript",
+        "vitest",
+        "zod"
+      ]
+    },
+    {
+      "name": "@reprise/providers",
+      "version": "1.1.0-rc.1",
+      "license": "UNLICENSED",
+      "path": "packages/providers/package.json",
+      "dependencies": [
+        "@reprise/core",
+        "@types/node",
+        "typescript",
+        "vitest"
+      ]
+    },
+    {
+      "name": "@reprise/recovery",
+      "version": "1.1.0-rc.1",
+      "license": "UNLICENSED",
+      "path": "packages/recovery/package.json",
+      "dependencies": [
+        "@reprise/compatibility",
+        "@reprise/core",
+        "@reprise/graph",
+        "@reprise/ledger",
+        "@reprise/policy",
+        "@reprise/verifier",
+        "@types/node",
+        "typescript",
+        "vitest"
+      ]
+    },
+    {
+      "name": "@reprise/sdk",
+      "version": "1.1.0-rc.1",
+      "license": "UNLICENSED",
+      "path": "packages/sdk/package.json",
+      "dependencies": [
+        "@reprise/compatibility",
+        "@reprise/core",
+        "@reprise/graph",
+        "@reprise/ledger",
+        "@reprise/planner",
+        "@reprise/policy",
+        "@reprise/providers",
+        "@reprise/recovery",
+        "@reprise/telemetry",
+        "@reprise/verifier",
+        "@types/node",
+        "typescript",
+        "vitest"
+      ]
+    },
+    {
+      "name": "@reprise/telemetry",
+      "version": "1.1.0-rc.1",
+      "license": "UNLICENSED",
+      "path": "packages/telemetry/package.json",
+      "dependencies": [
+        "@reprise/core",
+        "@types/node",
+        "typescript",
+        "vitest"
+      ]
+    },
+    {
+      "name": "@reprise/verifier",
+      "version": "1.1.0-rc.1",
+      "license": "UNLICENSED",
+      "path": "packages/verifier/package.json",
+      "dependencies": [
+        "@reprise/core",
+        "@types/node",
+        "typescript",
+        "vitest"
+      ]
+    },
+    {
+      "name": "@reprise/compatibility",
+      "version": "1.1.0-rc.1",
+      "license": "UNLICENSED",
+      "path": "packages/compatibility/package.json",
+      "dependencies": [
+        "@reprise/core",
+        "@reprise/graph",
+        "@types/node",
+        "typescript",
+        "vitest"
+      ]
+    },
+    {
+      "name": "@reprise/planner",
+      "version": "1.1.0-rc.1",
+      "license": "UNLICENSED",
+      "path": "packages/planner/package.json",
+      "dependencies": [
+        "@reprise/compatibility",
+        "@reprise/core",
+        "@reprise/graph",
+        "@reprise/ledger",
+        "@types/node",
+        "typescript",
+        "vitest"
+      ]
+    },
+    {
+      "name": "@reprise/provider-neon",
+      "version": "1.1.0-rc.1",
+      "license": "UNLICENSED",
+      "path": "providers/neon/package.json",
+      "dependencies": [
+        "@reprise/core",
+        "@reprise/providers",
+        "@types/node",
+        "typescript",
+        "vitest"
+      ]
+    }
+  ]
+}

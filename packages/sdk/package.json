@@ -1,0 +1,40 @@
+{
+  "name": "@reprise/sdk",
+  "version": "1.1.0-rc.1",
+  "description": "Public SDK for the Reprise control plane",
+  "license": "UNLICENSED",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "lint": "tsc -p tsconfig.json --noEmit",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@reprise/core": "workspace:*",
+    "@reprise/graph": "workspace:*",
+    "@reprise/ledger": "workspace:*",
+    "@reprise/compatibility": "workspace:*",
+    "@reprise/planner": "workspace:*",
+    "@reprise/verifier": "workspace:*",
+    "@reprise/policy": "workspace:*",
+    "@reprise/telemetry": "workspace:*",
+    "@reprise/providers": "workspace:*",
+    "@reprise/recovery": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  }
+}

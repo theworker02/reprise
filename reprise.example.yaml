@@ -1,0 +1,26 @@
+project:
+  name: broken-deployment
+  environment: production
+provider:
+  name: neon
+  options: {}
+recovery:
+  production_mutation: false
+  ephemeral_by_default: true
+  production:
+    require_verified: true
+    block_unknown: true
+    create_recovery_branch: true
+    require_checks: [health, schema, api, data_integrity]
+    promotion:
+      automatic: false
+policy:
+  unknown_compatibility: block
+  never_mutate_production: true
+  require_verified_before_promotion: true
+guards:
+  destructive_schema:
+    block: true
+  maximum_checkpoint_age: 24h
+  minimum_evidence:
+    compatibility_checks: 1
