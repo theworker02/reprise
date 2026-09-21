@@ -15,4 +15,5 @@
 | Neon snapshot/resource API adapter | UNSUPPORTED | No public API contract is claimed without adapter coverage |
 | Production promotion executor | UNSUPPORTED | Deliberately absent from CLI |
 | MCP agent server | PROPOSED | API design pending authorization model |
-| Dashboard and GitHub Pages site | PROPOSED | Not yet implemented |
+| Static interactive product site | IMPLEMENTED | `website/` source and GitHub Pages workflow; repository Pages configuration is still required for deployment |
+| Operational dashboard | PROPOSED | No dashboard application is shipped in this release |

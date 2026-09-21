@@ -1,6 +1,6 @@
 {
   "name": "@reprise/provider-neon",
-  "version": "1.1.0-rc.1",
+  "version": "1.1.0-rc.2",
   "description": "Documented Neon Management API provider for Reprise",
   "license": "UNLICENSED",
   "private": true,
