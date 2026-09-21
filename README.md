@@ -25,7 +25,7 @@ Reprise is intentionally not a database-backup wrapper. A snapshot may restore d
 
 ## Release status
 
-**Current release:** [`v1.1.0-rc.2`](https://github.com/theworker02/reprise/releases/tag/v1.1.0-rc.2) — a technically validated release candidate, not a general-availability production release.
+**Current release:** [`v1.1.0-rc.3`](https://github.com/theworker02/reprise/releases/tag/v1.1.0-rc.3) — a technically validated release candidate, not a general-availability production release.
 
 The core recovery reasoning path is verified locally and in CI: immutable graph and ledger behavior, evidence-based compatibility decisions, compound checkpoints, deterministic historical reconstruction, change-boundary analysis, recovery guardrails, tamper-evident receipts, durable local checkpoints, and the credential-free acquisition demonstration. The Neon branch-lifecycle adapter is covered by mocked provider contract tests; it has **not** been exercised against a live Neon account.
 
@@ -268,6 +268,7 @@ The CI workflow is intentionally pinned to Node 22 because pnpm 11 requires Node
 | Area | Primary reference |
 | --- | --- |
 | Architecture and recovery reasoning | [docs/V1_ARCHITECTURE.md](docs/V1_ARCHITECTURE.md) |
+| Reproducible proof of concept | [docs/PROOF_OF_CONCEPT.md](docs/PROOF_OF_CONCEPT.md) |
 | Capability and limitation boundaries | [docs/V1_CAPABILITY_MATRIX.md](docs/V1_CAPABILITY_MATRIX.md), [docs/V1_LIMITATIONS.md](docs/V1_LIMITATIONS.md) |
 | Neon implementation | [docs/providers/neon.md](docs/providers/neon.md) |
 | Threats and credentials | [docs/THREAT_MODEL.md](docs/THREAT_MODEL.md), [docs/CREDENTIAL_MODEL.md](docs/CREDENTIAL_MODEL.md) |

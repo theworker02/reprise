@@ -1,6 +1,6 @@
 {
   "name": "@reprise/sdk",
-  "version": "1.1.0-rc.2",
+  "version": "1.1.0-rc.3",
   "description": "Public SDK for the Reprise control plane",
   "license": "UNLICENSED",
   "private": true,

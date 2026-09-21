@@ -1,1 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 248 64" role="img" aria-labelledby="title"><title>Reprise</title><path fill="#f8fafc" d="M8 12a8 8 0 0 1 8-8h24a16 16 0 0 1 0 32H25a8 8 0 0 0 0 16h23v8H25a16 16 0 0 1 0-32h15a8 8 0 0 0 0-16H16v40H8V12Z"/><path fill="#8aa8ff" d="M48 52V36h8v16a8 8 0 0 1-8 8h-8v-8h8Z"/><text x="76" y="45" fill="#f8fafc" font-family="Arial, sans-serif" font-weight="700" font-size="37" letter-spacing="-1">Reprise</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 468 112" role="img" aria-labelledby="title description">
+  <title id="title">Reprise</title>
+  <desc id="description">Reprise return-path monogram and wordmark</desc>
+  <defs>
+    <linearGradient id="reprise-accent" x1="20" y1="18" x2="91" y2="94" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#B5C8FF"/>
+      <stop offset="1" stop-color="#7698FF"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="108" height="108" rx="30" fill="#142343"/>
+  <path d="M34 82V30h21c13.4 0 22 8 22 19.3 0 11.2-8.6 19.1-22 19.1H34" fill="none" stroke="#F8FAFC" stroke-linecap="round" stroke-linejoin="round" stroke-width="10"/>
+  <path d="m55 68 24 17" fill="none" stroke="#F8FAFC" stroke-linecap="round" stroke-width="10"/>
+  <path d="M85 31c7.7 6.1 12 14.8 12 24.1 0 17.7-14.3 32-32 32H54" fill="none" stroke="url(#reprise-accent)" stroke-linecap="round" stroke-width="8"/>
+  <path d="m57 99-12-12 12-12" fill="none" stroke="url(#reprise-accent)" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
+  <text x="136" y="70" fill="#F8FAFC" font-family="Arial, Helvetica, sans-serif" font-size="58" font-weight="800" letter-spacing="-2.7">Reprise</text>
+  <text x="139" y="91" fill="#AABBD9" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" letter-spacing="3.1">RECOVERY INTELLIGENCE</text>
+</svg>

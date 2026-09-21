@@ -1,6 +1,6 @@
 {
   "name": "@reprise/providers",
-  "version": "1.1.0-rc.2",
+  "version": "1.1.0-rc.3",
   "description": "Vendor-neutral provider interface and registry for Reprise",
   "license": "UNLICENSED",
   "private": true,

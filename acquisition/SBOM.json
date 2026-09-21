@@ -1,12 +1,12 @@
 {
   "bomFormat": "Reprise-inventory",
   "specVersion": "0.1",
-  "generatedAt": "2026-09-21T16:54:19.406Z",
+  "generatedAt": "2026-09-21T17:11:35.958Z",
   "source": "package manifests; not a substitute for a release CycloneDX/SPDX scan",
   "packages": [
     {
       "name": "reprise",
-      "version": "1.1.0-rc.2",
+      "version": "1.1.0-rc.3",
       "license": "UNLICENSED",
       "path": "package.json",
       "dependencies": [
@@ -18,7 +18,7 @@
     },
     {
       "name": "@reprise/cli",
-      "version": "1.1.0-rc.2",
+      "version": "1.1.0-rc.3",
       "license": "UNLICENSED",
       "path": "apps/cli/package.json",
       "dependencies": [
@@ -34,7 +34,7 @@
     },
     {
       "name": "@reprise/core",
-      "version": "1.1.0-rc.2",
+      "version": "1.1.0-rc.3",
       "license": "UNLICENSED",
       "path": "packages/core/package.json",
       "dependencies": [
@@ -47,7 +47,7 @@
     },
     {
       "name": "@reprise/graph",
-      "version": "1.1.0-rc.2",
+      "version": "1.1.0-rc.3",
       "license": "UNLICENSED",
       "path": "packages/graph/package.json",
       "dependencies": [
@@ -59,7 +59,7 @@
     },
     {
       "name": "@reprise/ledger",
-      "version": "1.1.0-rc.2",
+      "version": "1.1.0-rc.3",
       "license": "UNLICENSED",
       "path": "packages/ledger/package.json",
       "dependencies": [
@@ -71,7 +71,7 @@
     },
     {
       "name": "@reprise/policy",
-      "version": "1.1.0-rc.2",
+      "version": "1.1.0-rc.3",
       "license": "UNLICENSED",
       "path": "packages/policy/package.json",
       "dependencies": [
@@ -84,7 +84,7 @@
     },
     {
       "name": "@reprise/providers",
-      "version": "1.1.0-rc.2",
+      "version": "1.1.0-rc.3",
       "license": "UNLICENSED",
       "path": "packages/providers/package.json",
       "dependencies": [
@@ -96,7 +96,7 @@
     },
     {
       "name": "@reprise/recovery",
-      "version": "1.1.0-rc.2",
+      "version": "1.1.0-rc.3",
       "license": "UNLICENSED",
       "path": "packages/recovery/package.json",
       "dependencies": [
@@ -113,7 +113,7 @@
     },
     {
       "name": "@reprise/sdk",
-      "version": "1.1.0-rc.2",
+      "version": "1.1.0-rc.3",
       "license": "UNLICENSED",
       "path": "packages/sdk/package.json",
       "dependencies": [
@@ -134,7 +134,7 @@
     },
     {
       "name": "@reprise/telemetry",
-      "version": "1.1.0-rc.2",
+      "version": "1.1.0-rc.3",
       "license": "UNLICENSED",
       "path": "packages/telemetry/package.json",
       "dependencies": [
@@ -146,7 +146,7 @@
     },
     {
       "name": "@reprise/verifier",
-      "version": "1.1.0-rc.2",
+      "version": "1.1.0-rc.3",
       "license": "UNLICENSED",
       "path": "packages/verifier/package.json",
       "dependencies": [
@@ -158,7 +158,7 @@
     },
     {
       "name": "@reprise/compatibility",
-      "version": "1.1.0-rc.2",
+      "version": "1.1.0-rc.3",
       "license": "UNLICENSED",
       "path": "packages/compatibility/package.json",
       "dependencies": [
@@ -171,7 +171,7 @@
     },
     {
       "name": "@reprise/planner",
-      "version": "1.1.0-rc.2",
+      "version": "1.1.0-rc.3",
       "license": "UNLICENSED",
       "path": "packages/planner/package.json",
       "dependencies": [
@@ -186,7 +186,7 @@
     },
     {
       "name": "@reprise/provider-neon",
-      "version": "1.1.0-rc.2",
+      "version": "1.1.0-rc.3",
       "license": "UNLICENSED",
       "path": "providers/neon/package.json",
       "dependencies": [

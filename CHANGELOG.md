@@ -2,6 +2,35 @@
 
 All notable changes are documented in this file. Reprise follows semantic versioning; prerelease tags are not a claim of production general availability.
 
+## [1.1.0-rc.3] - 2026-09-21
+
+### Release summary
+
+This release candidate adds an inspectable visual proof-of-concept surface to the deterministic acquisition fixture and completes the first pass of the Reprise identity system. The visual material is code-native, small, accessible, and explicit about the fact that it is a local simulation—not a recording of live provider recovery.
+
+### Added
+
+- Animated state-graph hero, four-step recovery briefing, interactive playback controls, and executable visual console in the static product site.
+- A product-fit walkthrough explaining how Reprise’s compatibility and evidence layer can complement a branchable Postgres provider, with an explicit non-partnership disclaimer.
+- `docs/PROOF_OF_CONCEPT.md`, including reproducible commands, expected fixture output, demonstrated behavior, and non-demonstrated boundaries.
+
+### Changed
+
+- Replaced the initial logo with an original return-path R monogram, high-contrast wordmark, dark lockup, and favicon-scale mark.
+- Linked the proof-of-concept material from the README’s diligence references.
+
+### Verification
+
+- SVG identity assets pass XML parsing.
+- `node --check website/app.js` and `pnpm build` pass.
+- The full release validation suite is rerun before tagging and publishing this release.
+
+### Important boundaries
+
+- The visual demo is fixture-driven and makes no provider calls.
+- No downloadable video, GIF, or binary artifact is included; the site uses inspectable HTML, CSS, JavaScript, and SVG.
+- No live Neon recovery, snapshot/PITR operation, or production promotion is claimed or introduced.
+
 ## [1.1.0-rc.2] - 2026-09-21
 
 ### Release summary
