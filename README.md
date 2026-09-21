@@ -275,7 +275,7 @@ The CI workflow is intentionally pinned to Node 22 because pnpm 11 requires Node
 | IP, dependencies, SBOM, and licenses | [acquisition/IP_PROVENANCE.md](acquisition/IP_PROVENANCE.md), [acquisition/DEPENDENCY_INVENTORY.md](acquisition/DEPENDENCY_INVENTORY.md), [acquisition/LICENSE_AUDIT.md](acquisition/LICENSE_AUDIT.md) |
 | Risks and known limitations | [acquisition/RISK_REGISTER.md](acquisition/RISK_REGISTER.md), [acquisition/KNOWN_LIMITATIONS.md](acquisition/KNOWN_LIMITATIONS.md) |
 
-The [website](website/) is a polished static product surface with a clearly labelled deterministic sample scenario. The Pages workflow is included, but publishing requires GitHub Pages to be enabled for the repository.
+The [website](website/) is a polished static product surface with a clearly labelled deterministic sample scenario. It includes a motion-enabled four-frame recovery briefing, animated sample state graph, and executable visual console; all three are driven by local fixture data and disclose that they do not perform provider operations. The Pages workflow is included, but publishing requires GitHub Pages to be enabled for the repository.
 
 ## Security, telemetry, and licensing
 

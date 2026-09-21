@@ -1,1 +1,173 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Reprise reconstructs and verifies compatible backend recovery states."><title>Reprise — Backend Recovery</title><link rel="stylesheet" href="./styles.css"></head><body><nav><a class="brand" href="#top"><img src="./assets/logo-dark.svg" alt="Reprise"></a><span class="navlinks"><a href="#signal">Signal</a><a href="#demo">Demo</a><a href="#architecture">Architecture</a><a href="https://github.com/" aria-label="GitHub repository">GitHub ↗</a></span></nav><main id="top"><section class="hero"><p class="eyebrow">BACKEND RECOVERY CONTROL PLANE</p><h1>Know what can recover<br><em>before</em> you touch production.</h1><p class="lede">Reprise reconstructs a mutually compatible backend state across code, schema, functions, contracts, configuration, and dependencies—then verifies it in isolation.</p><div class="actions"><a class="button" href="#demo">Explore the recovery demo</a><a class="text-link" href="../README.md">Read the README ↗</a></div><div class="hero-grid"><span>STATE GRAPH</span><span>CHANGE LEDGER</span><span>RECOVERY GUARD</span><span>PROOF RECEIPTS</span></div></section><section id="signal" class="signal"><p class="eyebrow">THE DIFFERENTIATOR</p><h2>Reprise Signal</h2><p>A portable recoverability passport. Not a confidence score: every dimension remains visible, traceable, and policy-enforceable.</p><div class="dimensions"><article><b>Compatibility</b><strong>COMPATIBLE</strong><small>Cross-component evidence</small></article><article><b>Verification</b><strong>VERIFIED</strong><small>Recovery candidate receipt</small></article><article><b>Freshness</b><strong>CURRENT</strong><small>Revision-bound guard</small></article><article><b>Unknowns</b><strong>0</strong><small>Never hidden as safe</small></article></div></section><section id="demo" class="demo"><div><p class="eyebrow">DETERMINISTIC LOCAL DEMO</p><h2>v1.8 breaks the users API.<br>v1.7 becomes the verified candidate.</h2><p>Click through the same local scenario the CLI runs. No credentials. No provider operations. No fabricated production state.</p></div><div class="console"><div class="console-top"><span></span><span></span><span></span><code>reprise demo acquisition</code></div><pre id="output">Ready to reconstruct incident-acquisition.</pre><button id="run">Run recovery simulation</button></div></section><section id="architecture" class="architecture"><p class="eyebrow">SAFE BY CONSTRUCTION</p><h2>Recovery is a proof-bearing workflow.</h2><img src="./assets/recovery-flow.svg" alt="Incident, boundary, candidate, verification, and recovery guard flow"><p>Provider operations are capability-gated. Production promotion remains an explicit, separately authorized action. A stale state revision blocks a plan even when its candidate once verified.</p></section></main><footer><img src="./assets/logo-dark.svg" alt="Reprise"><span>Recover the whole backend, not just the database.</span><span>Local-first. Evidence-led. Safe by default.</span></footer><script src="./app.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Reprise reconstructs and verifies compatible backend recovery states.">
+    <title>Reprise — Backend Recovery</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <nav>
+      <a class="brand" href="#top"><img src="./assets/logo-dark.svg" alt="Reprise"></a>
+      <span class="navlinks">
+        <a href="#brief">Briefing</a>
+        <a href="#signal">Signal</a>
+        <a href="#demo">Demo</a>
+        <a href="#neon-fit">Neon fit</a>
+        <a href="#architecture">Architecture</a>
+        <a href="https://github.com/theworker02/reprise" aria-label="Reprise on GitHub">GitHub ↗</a>
+      </span>
+    </nav>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">BACKEND RECOVERY CONTROL PLANE</p>
+          <h1>Know what can recover<br><em>before</em> you touch production.</h1>
+          <p class="lede">Reprise reconstructs a mutually compatible backend state across code, schema, functions, contracts, configuration, and dependencies—then verifies it in isolation.</p>
+          <div class="actions">
+            <a class="button" href="#brief">Watch the visual briefing</a>
+            <a class="text-link" href="../README.md">Read the technical README ↗</a>
+          </div>
+          <div class="hero-grid" aria-label="Core Reprise systems">
+            <span>STATE GRAPH</span><span>CHANGE LEDGER</span><span>RECOVERY GUARD</span><span>PROOF RECEIPTS</span>
+          </div>
+        </div>
+
+        <div class="hero-stage" aria-label="Animated sample recovery state graph">
+          <div class="stage-label"><i></i> SAMPLE INCIDENT · LOCAL ONLY</div>
+          <div class="source-cluster">
+            <p>UNSAFE STATE · v1.8</p>
+            <div class="state-node bad">Deployment <b>v1.8</b></div>
+            <div class="state-node bad">Migration <b>M104</b></div>
+            <div class="state-node bad">Function <b>F18</b></div>
+          </div>
+          <div class="scan-line" aria-hidden="true"></div>
+          <div class="analysis-orbit" aria-hidden="true"><span>+</span></div>
+          <div class="reprise-core">R<span>REPRISE</span></div>
+          <div class="path path-one" aria-hidden="true"></div>
+          <div class="path path-two" aria-hidden="true"></div>
+          <div class="path path-three" aria-hidden="true"></div>
+          <div class="candidate-cluster">
+            <p>VERIFIED CANDIDATE · v1.7</p>
+            <div class="state-node good">Schema <b>S12</b></div>
+            <div class="state-node good">Function <b>F17</b></div>
+            <div class="state-node good">Contract <b>C6</b></div>
+          </div>
+          <div class="candidate-seal"><span>✓</span> COMPATIBLE<br><small>verification required</small></div>
+        </div>
+      </section>
+
+      <section id="brief" class="brief">
+        <div class="section-heading">
+          <p class="eyebrow">A 45-SECOND RECOVERY BRIEFING</p>
+          <h2>Why a backup alone cannot explain a safe recovery.</h2>
+          <p>Walk through the deterministic v1.7 → v1.8 incident fixture. Every frame maps to a concrete part of Reprise’s executable demo; no provider operation is performed.</p>
+        </div>
+        <div class="brief-shell" id="brief-shell" data-step="0">
+          <div class="brief-screen">
+            <div class="brief-meta"><span id="brief-index">01 / 04</span><span id="brief-kind">OBSERVED FAILURE</span></div>
+            <div class="brief-orb orb-a"></div><div class="brief-orb orb-b"></div>
+            <div class="brief-content">
+              <p class="eyebrow" id="brief-eyebrow">INCIDENT INPUT</p>
+              <h3 id="brief-title">The users API fails after v1.8.</h3>
+              <p id="brief-copy">A deployment, a schema revision, and a function revision changed together. Reprise records the relationship before it proposes a response.</p>
+              <div class="brief-evidence" id="brief-evidence"><span>deployment v1.8</span><span>schema S13</span><span>function F18</span></div>
+            </div>
+            <div class="brief-glyph" id="brief-glyph" aria-hidden="true">!</div>
+            <div class="brief-caption" id="brief-caption">Sample data · incident-acquisition · no live provider calls</div>
+          </div>
+          <div class="brief-controls">
+            <div class="progress-track" aria-hidden="true"><span id="brief-progress"></span></div>
+            <div class="brief-actions">
+              <button class="play" id="play-brief" type="button" aria-pressed="false"><span aria-hidden="true">▶</span> Play briefing</button>
+              <button class="quiet-button" id="next-brief" type="button">Next frame →</button>
+            </div>
+            <div class="brief-steps" role="tablist" aria-label="Recovery briefing steps">
+              <button role="tab" aria-selected="true" data-step="0"><b>01</b> Observe</button>
+              <button role="tab" aria-selected="false" data-step="1"><b>02</b> Reconstruct</button>
+              <button role="tab" aria-selected="false" data-step="2"><b>03</b> Verify</button>
+              <button role="tab" aria-selected="false" data-step="3"><b>04</b> Guard</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="signal" class="signal">
+        <p class="eyebrow">THE DIFFERENTIATOR</p>
+        <h2>Reprise Signal</h2>
+        <p>A portable recoverability passport. Not a confidence score: every dimension remains visible, traceable, and policy-enforceable.</p>
+        <div class="dimensions">
+          <article><b>Compatibility</b><strong>COMPATIBLE</strong><small>Cross-component evidence</small></article>
+          <article><b>Verification</b><strong>VERIFIED</strong><small>Recovery candidate receipt</small></article>
+          <article><b>Freshness</b><strong>CURRENT</strong><small>Revision-bound guard</small></article>
+          <article><b>Unknowns</b><strong>0</strong><small>Never hidden as safe</small></article>
+        </div>
+      </section>
+
+      <section id="demo" class="demo">
+        <div>
+          <p class="eyebrow">EXECUTABLE LOCAL DEMO</p>
+          <h2>Watch the evidence accumulate.</h2>
+          <p>Run the same six-step recovery path as the CLI fixture. It is a timed visual rendering of deterministic sample output—not a live production console.</p>
+          <ul class="demo-points">
+            <li><span>01</span> Find the suspected change boundary</li>
+            <li><span>02</span> Reconstruct the compatible checkpoint</li>
+            <li><span>03</span> Verify evidence and block unsafe promotion</li>
+          </ul>
+        </div>
+        <div class="console" aria-label="Animated deterministic recovery demo">
+          <div class="console-top"><span></span><span></span><span></span><code>reprise demo acquisition --json</code><i>DETERMINISTIC</i></div>
+          <pre id="output" aria-live="polite">Ready to reconstruct incident-acquisition.</pre>
+          <div class="console-bottom"><button id="run" type="button">Run visual recovery</button><span id="demo-status">No provider calls</span></div>
+        </div>
+      </section>
+
+      <section id="neon-fit" class="neon-fit">
+        <div class="section-heading">
+          <p class="eyebrow">PRODUCT-FIT VIEW · NOT A PARTNERSHIP CLAIM</p>
+          <h2>A recovery-intelligence layer for branchable Postgres.</h2>
+          <p>Neon’s documented branch lifecycle is a useful isolation primitive. Reprise adds the decision layer: the cross-component evidence for which historical state merits a branch, what must travel with it, and whether its result may be trusted.</p>
+        </div>
+        <div class="fit-flow" aria-label="Conceptual product-fit flow">
+          <article class="fit-column provider">
+            <p>PROVIDER PRIMITIVE</p>
+            <h3>Isolated database branch</h3>
+            <div class="fit-line"></div>
+            <small>Documented branch discovery, creation, and explicit cleanup are implemented in the Neon adapter.</small>
+          </article>
+          <div class="fit-arrow" aria-hidden="true"><span>+</span><i></i></div>
+          <article class="fit-column reprise">
+            <p>REPRISE CONTROL PLANE</p>
+            <h3>Compatible recovery candidate</h3>
+            <div class="fit-line"></div>
+            <small>State graph, change boundary, verification evidence, stale-plan guard, and auditable receipt.</small>
+          </article>
+          <div class="fit-arrow" aria-hidden="true"><span>→</span><i></i></div>
+          <article class="fit-column outcome">
+            <p>ENGINEER OUTCOME</p>
+            <h3>Explainable, safer recovery</h3>
+            <div class="fit-line"></div>
+            <small>Unknowns remain visible. Production mutation remains explicitly authorized and outside this demo.</small>
+          </article>
+        </div>
+        <p class="fit-note">The live Neon adapter is contract-tested against documented branch endpoints. Snapshot/PITR and production promotion are not implemented in this release.</p>
+      </section>
+
+      <section id="architecture" class="architecture">
+        <p class="eyebrow">SAFE BY CONSTRUCTION</p>
+        <h2>Recovery is a proof-bearing workflow.</h2>
+        <img src="./assets/recovery-flow.svg" alt="Incident, boundary, candidate, verification, and recovery guard flow">
+        <p>Provider operations are capability-gated. Production promotion remains an explicit, separately authorized action. A stale state revision blocks a plan even when its candidate once verified.</p>
+      </section>
+    </main>
+
+    <footer>
+      <img src="./assets/logo-dark.svg" alt="Reprise">
+      <span>Recover the whole backend, not just the database.</span>
+      <span>Local-first. Evidence-led. Safe by default.</span>
+    </footer>
+    <script src="./app.js"></script>
+  </body>
+</html>
