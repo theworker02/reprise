@@ -282,8 +282,8 @@ The [website](website/) is a polished static product surface with a clearly labe
 
 Reprise is local-first. The shipped demo does not collect telemetry, require an account, or include credentials. Provider keys belong in runtime-only configuration and must never be committed. The detailed threat and credential models document current controls and remaining implementation work.
 
-Source is made available for evaluation in this repository but remains proprietary. No license to use, distribute, modify, or create derivative works is granted merely through repository access. See [LICENSE](LICENSE), [COMMERCIAL_LICENSE.md](COMMERCIAL_LICENSE.md), and [SECURITY.md](SECURITY.md).
+Source is made available for evaluation in this repository but remains proprietary. No license to use, distribute, modify, or create derivative works is granted merely through repository access. See [LICENSE](LICENSE), [COMMERCIAL_LICENSE.md](COMMERCIAL_LICENSE.md), [ACQUISITION.md](ACQUISITION.md), and [SECURITY.md](SECURITY.md).
 
 ## Contributing and support
 
-This is a proprietary evaluation repository. Contributions, issue reports, and security disclosures are governed by [CONTRIBUTING.md](CONTRIBUTING.md), [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md), [SECURITY.md](SECURITY.md), and [SUPPORT.md](SUPPORT.md). Do not submit confidential provider credentials or production incident data.
+This is a proprietary evaluation repository. Security disclosures are governed by [SECURITY.md](SECURITY.md); evaluation and transaction terms are described in [COMMERCIAL_LICENSE.md](COMMERCIAL_LICENSE.md) and [ACQUISITION.md](ACQUISITION.md). Do not submit confidential provider credentials or production incident data.
