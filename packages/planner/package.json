@@ -2,7 +2,7 @@
   "name": "@reprise/planner",
   "version": "1.1.0-rc.3",
   "description": "Deterministic recovery planner for Reprise",
-  "license": "UNLICENSED",
+  "license": "SEE LICENSE IN LICENSE",
   "private": true,
   "type": "module",
   "exports": {

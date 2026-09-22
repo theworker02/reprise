@@ -2,7 +2,7 @@
   "name": "@reprise/policy",
   "version": "1.1.0-rc.3",
   "description": "Machine-readable recovery policies for Reprise",
-  "license": "UNLICENSED",
+  "license": "SEE LICENSE IN LICENSE",
   "private": true,
   "type": "module",
   "exports": {

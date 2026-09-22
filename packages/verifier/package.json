@@ -2,7 +2,7 @@
   "name": "@reprise/verifier",
   "version": "1.1.0-rc.3",
   "description": "Verification engine producing machine-readable receipts",
-  "license": "UNLICENSED",
+  "license": "SEE LICENSE IN LICENSE",
   "private": true,
   "type": "module",
   "exports": {

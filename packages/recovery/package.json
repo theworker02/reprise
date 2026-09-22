@@ -2,7 +2,7 @@
   "name": "@reprise/recovery",
   "version": "1.1.0-rc.3",
   "description": "Checkpoint reconstruction, recovery guard, and receipts for Reprise",
-  "license": "UNLICENSED",
+  "license": "SEE LICENSE IN LICENSE",
   "private": true,
   "type": "module",
   "exports": { ".": { "types": "./dist/index.d.ts", "import": "./dist/index.js" } },
