@@ -25,7 +25,7 @@ Reprise is intentionally not a database-backup wrapper. A snapshot may restore d
 
 ## Release status
 
-**Current release:** [`v1.1.0-rc.3`](https://github.com/theworker02/reprise/releases/tag/v1.1.0-rc.3) — a technically validated release candidate, not a general-availability production release.
+**Current release:** [`v1.1.0-rc.3`](https://github.com/theworker02/reprise/releases/tag/v1.1.0-rc.3) â€” a technically validated release candidate, not a general-availability production release.
 
 The core recovery reasoning path is verified locally and in CI: immutable graph and ledger behavior, evidence-based compatibility decisions, compound checkpoints, deterministic historical reconstruction, change-boundary analysis, recovery guardrails, tamper-evident receipts, durable local checkpoints, and the credential-free acquisition demonstration. The Neon branch-lifecycle adapter is covered by mocked provider contract tests; it has **not** been exercised against a live Neon account.
 
@@ -51,9 +51,9 @@ Read the [release notes](CHANGELOG.md), [capability matrix](docs/V1_CAPABILITY_M
 
 Traditional rollback tooling normally answers one narrow question: how to restore a particular system. Production incidents rarely stay that narrow. A migration, an application deployment, a function revision, an environment change, and a storage contract can all be individually valid yet mutually incompatible.
 
-Reprise maintains an evidence-backed view of those relationships. It uses typed historical records and explicit compatibility results rather than timestamp matching or a single “healthy” status. The planner can therefore explain *why* it selected a candidate, what evidence supports it, and which unknowns still block action.
+Reprise maintains an evidence-backed view of those relationships. It uses typed historical records and explicit compatibility results rather than timestamp matching or a single â€œhealthyâ€ status. The planner can therefore explain *why* it selected a candidate, what evidence supports it, and which unknowns still block action.
 
-| A conventional restore workflow | Reprise’s recovery model |
+| A conventional restore workflow | Repriseâ€™s recovery model |
 | --- | --- |
 | Restores a database point or backup | Selects a compound checkpoint across backend components |
 | Assumes recency implies safety | Ranks evidence and preserves contradictions |
@@ -90,7 +90,7 @@ Reprise is designed to fail safely.
 - **Unknown is blocking.** `UNKNOWN` compatibility is never silently treated as `COMPATIBLE`.
 - **Isolation first.** Recovery work is meant to construct and verify a candidate before any production action.
 - **No default production mutation.** This release intentionally does not expose a production restore or promotion command.
-- **Stale-plan protection.** The Recovery Guard compares the revision used to produce a candidate with the executor’s supplied current revision.
+- **Stale-plan protection.** The Recovery Guard compares the revision used to produce a candidate with the executorâ€™s supplied current revision.
 - **Evidence is durable.** Verification produces a tamper-evident receipt with the candidate, checks, timestamp, and evidence identifiers.
 - **Provider limits are explicit.** Unsupported provider operations are surfaced as unsupported rather than simulated.
 
@@ -154,18 +154,18 @@ The demo is a deterministic, credential-free reconstruction of a recoverable inc
 
 ```text
 v1.7
-├── schema S12
-├── function F17
-└── storage contract C6
+â”œâ”€â”€ schema S12
+â”œâ”€â”€ function F17
+â””â”€â”€ storage contract C6
 
 v1.8
-├── migration M104
-├── schema S13
-├── function F18
-└── storage contract C7
+â”œâ”€â”€ migration M104
+â”œâ”€â”€ schema S13
+â”œâ”€â”€ function F18
+â””â”€â”€ storage contract C7
 
-failure → change boundary → compatible v1.7 checkpoint
-        → six verification checks → guarded recovery receipt
+failure â†’ change boundary â†’ compatible v1.7 checkpoint
+        â†’ six verification checks â†’ guarded recovery receipt
 ```
 
 For automation or inspection, request machine-readable output:
@@ -215,9 +215,9 @@ Each recovery receipt binds the candidate, verification outcome, evaluation time
 
 ```text
 candidate selected
-  → verification checks evaluate evidence
-  → guard compares candidate revision to supplied current revision
-  → receipt records the decision or blocking reason
+  â†’ verification checks evaluate evidence
+  â†’ guard compares candidate revision to supplied current revision
+  â†’ receipt records the decision or blocking reason
 ```
 
 For the precise current boundary, see [limitations](docs/V1_LIMITATIONS.md) and the [security review](acquisition/SECURITY_REVIEW.md).
@@ -287,3 +287,7 @@ Source is made available for evaluation in this repository but remains proprieta
 ## Contributing and support
 
 This is a proprietary evaluation repository. Security disclosures are governed by [SECURITY.md](SECURITY.md); evaluation and transaction terms are described in [COMMERCIAL_LICENSE.md](COMMERCIAL_LICENSE.md) and [ACQUISITION.md](ACQUISITION.md). Do not submit confidential provider credentials or production incident data.
+
+## Acquisition diligence
+
+Buyer-facing diligence materials live in [docs/acquisition/](./docs/acquisition/). Commercial licensing contact path: [COMMERCIAL.md](./COMMERCIAL.md).
