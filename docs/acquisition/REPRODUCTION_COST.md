@@ -1,31 +1,22 @@
-# Reproduction Cost — reprise
+﻿# Reproduction Cost â€” reprise
 
-**Commercial asking floor:** USD $(@{name=reprise; lang=TypeScript; sizeKB=199; vis=public; tier=Systems / Deep IP; hours=900; rate=200; repro=180000; ask=220000; desc=Reprise is a local-first recovery and compatibility control plane for changing backends. It models deployments, schema, functions, storage contracts, auth, configuration, and dependencies as evidence-backed historical state. It chooses a mutually compatible recovery candidate, verifies it in isolation, and refuses unsafe promotion by default.; url=https://github.com/theworker02/reprise}.ask.ToString('N0'))  
-**Prepared:** 2026-09-24  
-**Portfolio analysis:** https://github.com/theworker02/theworker02/blob/main/REPRODUCTION_COST_ANALYSIS.md
+**Commercial asking floor:** USD $80,000
+**Prepared:** 2026-09-24
 
 ## Replacement-cost estimate
 
 | Item | Estimate |
-| :--- | ---: |
+| --- | ---: |
 | Complexity tier | Systems / Deep IP |
 | Specialized engineering hours | 900 |
-| Loaded rate | USD $(@{name=reprise; lang=TypeScript; sizeKB=199; vis=public; tier=Systems / Deep IP; hours=900; rate=200; repro=180000; ask=220000; desc=Reprise is a local-first recovery and compatibility control plane for changing backends. It models deployments, schema, functions, storage contracts, auth, configuration, and dependencies as evidence-backed historical state. It chooses a mutually compatible recovery candidate, verifies it in isolation, and refuses unsafe promotion by default.; url=https://github.com/theworker02/reprise}.rate) / hr |
-| Reproduction cost | USD $(@{name=reprise; lang=TypeScript; sizeKB=199; vis=public; tier=Systems / Deep IP; hours=900; rate=200; repro=180000; ask=220000; desc=Reprise is a local-first recovery and compatibility control plane for changing backends. It models deployments, schema, functions, storage contracts, auth, configuration, and dependencies as evidence-backed historical state. It chooses a mutually compatible recovery candidate, verifies it in isolation, and refuses unsafe promotion by default.; url=https://github.com/theworker02/reprise}.repro.ToString('N0')) |
-| **Asking price** | **USD $(@{name=reprise; lang=TypeScript; sizeKB=199; vis=public; tier=Systems / Deep IP; hours=900; rate=200; repro=180000; ask=220000; desc=Reprise is a local-first recovery and compatibility control plane for changing backends. It models deployments, schema, functions, storage contracts, auth, configuration, and dependencies as evidence-backed historical state. It chooses a mutually compatible recovery candidate, verifies it in isolation, and refuses unsafe promotion by default.; url=https://github.com/theworker02/reprise}.ask.ToString('N0'))** |
+| Loaded rate | USD $200/hr |
+| Reproduction cost | USD $180,000 |
+| Asking price | **USD $80,000+** |
 
-## Why acquisition beats greenfield
+## Why not greenfield
 
-Reproducing `reprise` means rediscovering domain constraints, re-implementing architecture and edge cases, rebuilding tests/CI/packaging, and rewriting diligence materials already present in this repository. Buying the transferable IP is the faster path to a production-ready starting point.
+Vendor-neutral recovery planning over immutable state graphs, ledgers, capability providers, and verification gates duplicates years of backend-migration edge cases already modeled here.
 
-## Product thesis
-
-Reprise is a local-first recovery and compatibility control plane for changing backends. It models deployments, schema, functions, storage contracts, auth, configuration, and dependencies as evidence-backed historical state. It chooses a mutually compatible recovery candidate, verifies it in isolation, and refuses unsafe promotion by default.
-
-## Related
-
-- Root `ACQUISITION.md`
-- Root `COMMERCIAL.md`
-- Portfolio roll-up: [REPRODUCTION_COST_ANALYSIS.md](https://github.com/theworker02/theworker02/blob/main/REPRODUCTION_COST_ANALYSIS.md)
+See also root `ACQUISITION.md`, `COMMERCIAL.md`, and the portfolio analysis at https://github.com/theworker02/theworker02/blob/main/REPRODUCTION_COST_ANALYSIS.md
 
 *Diligence support only. Not a binding offer.*
